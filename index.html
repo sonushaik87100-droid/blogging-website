@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andhra Food Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>🌶️ Andhra Food Hub</h1>
+      <p>Explore 10 famous foods of Andhra Pradesh</p>
+    </div>
+    <button id="logoutBtn" class="logout hidden">Logout</button>
+  </header>
+
+  <main>
+    <section id="loginPage" class="login-page">
+      <div class="login-card">
+        <div class="logo">🍛</div>
+        <h2>Welcome Back</h2>
+        <p>Login to explore Andhra cuisine</p>
+        <form id="loginForm">
+          <label for="username">Username</label>
+          <input id="username" type="text" placeholder="Enter username" required>
+
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Enter password" required>
+
+          <button type="submit" class="primary">Login</button>
+          <p id="loginMessage" class="message"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="dashboard" class="hidden">
+      <div class="dashboard-head">
+        <div>
+          <span class="eyebrow">ANDHRA PRADESH CUISINE</span>
+          <h2>10 Famous Foods</h2>
+          <p>From tangy gongura to delicate pootharekulu, discover traditional Andhra flavors.</p>
+        </div>
+        <input id="searchBox" class="search" type="search" placeholder="Search food...">
+      </div>
+
+      <div id="foodGrid" class="food-grid"></div>
+      <p id="noResults" class="no-results hidden">No food item found.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Andhra Food Hub • Educational demo website</footer>
+  <script src="script.js"></script>
+</body>
+</html>
